@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container main">
+        <!-- Your result section -->
+        <section class="your-result-section">
+            <h2 class="your-result-h2">Your Result</h2>
+            <div class="score-div">
+                <span class="score-span">76</span>
+                <span class="score-of-100-span">of 100</span>
+            </div>
+            <h1 class="result-appreciation">Great</h1>
+            <p class="result-p">You scored higher than 65% of the people who have taken these tests.</p>
+        </section>
+        <!-- Summary section -->
+        <section class="summary">
+            <div class="summary-container-div">
+                <h2 class="summary-h2">Summary</h2>
+                <!-- Cards -->
+                <ul class="summary-ul">
+                    <!-- Reaction card -->
+                    <li>
+                        <div class="summary-card reaction-summary-card">
+                            <i class="fa-light fa-bolt"></i>
+                            <h3 class="card-title reaction-card-title">Reaction</h3>
+                            <span class="reaction-score">80</span>
+                            <span class="summary-score-of-100"> / 100</span>
+                        </div>
+                    </li>
+    
+                    <!-- Memory card -->
+                    <li>
+                        <div class="summary-card memory-summary-card">
+                            <!-- logo -->
+                            <h3 class="card-title memory-card-title">Memory</h3>
+                            <span class="memory-score">92</span>
+                            <span class="summary-score-of-100"> / 100</span>
+                        </div>
+                    </li>
+    
+                    <!-- Verbal card -->
+                    <li>
+                        <div class="summary-card verbal-summary-card">
+                            <!-- logo -->
+                            <h3 class="card-title verbal-card-title">Verbal</h3>
+                            <span class="verbal-score">80</span>
+                            <span class="summary-score-of-100"> / 100</span>
+                        </div>
+                    </li>
+    
+                    <!-- Visual card -->
+                    <li>
+                        <div class="summary-card visual-summary-card">
+                            <!-- logo -->
+                            <h3 class="card-title visual-card-title">Visual</h3>
+                            <span class="visual-score">80</span>
+                            <span class="summary-score-of-100"> / 100</span>
+                        </div>
+                    </li>
+                </ul>
+    
+                <!-- Button -->
+                <div class="continue-btn">Continue</div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
