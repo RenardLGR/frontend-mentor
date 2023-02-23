@@ -9,7 +9,7 @@ body{
     display: flex;
     max-width: 800px;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 20% 5px 0 5px;
+    margin: 10% 5px 0 5px;
     border-radius: 30px;
     box-shadow: 30px 30px 100px rgba(0, 0, 160, 0.2);
 }
@@ -193,5 +193,16 @@ body{
 }
 
 @media (max-width: 500px){
+    .main{
+        flex-direction: column;
+        margin: -5px 0 0 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0 30px 100px rgba(0, 0, 160, 0.2);
+    }
 
+    .your-result-section{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
