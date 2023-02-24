@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="./output-tailwind.css">
 </head>
 
-<body class="font-Grotesk">
-    <section class="container flex flex-col sm:flex-row">
+<body class="font-Grotesk bg-slate-200">
+    <section class="container flex flex-col sm:flex-row bg-white rounded-3xl sm:mt-40 max-w-fit mx-auto shadow-configedMobile sm:shadow-configed">
         <!-- Your result section -->
-        <section class="flex flex-col bg-gradient-to-b from-purpleBlue to-royalBlue rounded-b-3xl sm:rounded-3xl">
+        <section class="container max-w-lg flex flex-col bg-gradient-to-b from-purpleBlue to-royalBlue rounded-b-3xl sm:rounded-3xl">
             <h2 class="text-2xl text-textColorLightFuschia text-center mt-3">Your Result</h2>
             <div class="flex flex-col rounded-full h-44 w-44 mt-3 mx-auto bg-gradient-to-b from-circleVioletBlue to-circlePersianBlue">
                 <span class="text-white font-extrabold text-6xl text-center mt-10">76</span>
@@ -29,70 +29,72 @@
             <p class="w-4/6 text-center text-textColorLightFuschia mx-auto my-5">You scored higher than 65% of the people who have taken these tests.</p>
         </section>
         <!-- Summary section -->
-        <section class="summary">
-            <div class="summary-container-div">
-                <h2 class="summary-h2">Summary</h2>
+        <section class="container max-w-lg">
+            <div class="container flex flex-col w-10/12 mx-auto">
+                <h2 class="pt-4 text-xl text-buttonNSummaryh2 font-bold">Summary</h2>
                 <!-- Cards -->
-                <ul class="summary-ul">
+                <ul class="pt-6">
                     <!-- Reaction card -->
                     <li>
-                        <div class="summary-card reaction-summary-card">
-                            <div class="icon-title-container-div">
-                                <img src="../assets/images/icon-reaction.svg" alt="">
-                                <h3 class="card-title reaction-card-title">Reaction</h3>
+                        <div class="flex flex-row justify-between h-12 rounded-lg items-center bg-bgCardReaction">
+                            <div class="flex flex-row ml-2">
+                                <img src="../assets/images/icon-reaction.svg" alt="" class="ml-2">
+                                <h3 class="text-textCardReaction ml-2">Reaction</h3>
                             </div>
-                            <div class="score-of-100-container-div">
-                                <span class="summary-score-note">80</span>
-                                <span class="summary-score-of-100"> / 100</span>
+                            <div class="">
+                                <span class="text-buttonNSummaryh2 font-bold mr-1">80</span>
+                                <span class="text-textOf100Score font-medium mr-3"> / 100</span>
                             </div>
                         </div>
                     </li>
     
                     <!-- Memory card -->
                     <li>
-                        <div class="summary-card memory-summary-card">
-                            <div class="icon-title-container-div">
-                                <img src="../assets/images/icon-memory.svg" alt="">
-                                <h3 class="card-title memory-card-title">Memory</h3>
+                        <div class="flex flex-row justify-between h-12 rounded-lg items-center bg-bgCardMemory mt-3">
+                            <div class="flex flex-row ml-2">
+                                <img src="../assets/images/icon-memory.svg" alt="" class="ml-2">
+                                <h3 class="text-textCardMemory ml-2">Memory</h3>
                             </div>
-                            <div class="score-of-100-container-div">
-                                <span class="summary-score-note">92</span>
-                                <span class="summary-score-of-100"> / 100</span>
+                            <div class="">
+                                <span class="text-buttonNSummaryh2 font-bold mr-1">92</span>
+                                <span class="text-textOf100Score font-medium mr-3"> / 100</span>
                             </div>
                         </div>
                     </li>
     
                     <!-- Verbal card -->
                     <li>
-                        <div class="summary-card verbal-summary-card">
-                            <div class="icon-title-container-div">
-                                <img src="../assets/images/icon-verbal.svg" alt="">
-                                <h3 class="card-title verbal-card-title">Verbal</h3>
+                        <div class="flex flex-row justify-between h-12 rounded-lg items-center bg-bgCardVerbal mt-3">
+                            <div class="flex flex-row ml-2">
+                                <img src="../assets/images/icon-verbal.svg" alt="" class="ml-2">
+                                <h3 class="text-textCardVerbal ml-2">Verbal</h3>
                             </div>
-                            <div class="score-of-100-container-div">
-                                <span class="summary-score-note">61</span>
-                                <span class="summary-score-of-100"> / 100</span>
+                            <div class="">
+                                <span class="text-buttonNSummaryh2 font-bold mr-1">61</span>
+                                <span class="text-textOf100Score font-medium mr-3"> / 100</span>
                             </div>
                         </div>
                     </li>
     
                     <!-- Visual card -->
                     <li>
-                        <div class="summary-card visual-summary-card">
-                            <div class="icon-title-container-div">
-                                <img src="../assets/images/icon-visual.svg" alt="">
-                                <h3 class="card-title visual-card-title">Visual</h3>
+                        <div class="flex flex-row justify-between h-12 rounded-lg items-center bg-bgCardVisual mt-3">
+                            <div class="flex flex-row ml-2">
+                                <img src="../assets/images/icon-visual.svg" alt="" class="ml-2">
+                                <h3 class="text-textCardVisual ml-2">Visual</h3>
                             </div>
-                            <div class="score-of-100-container-div">
-                                <span class="summary-score-note">72</span>
-                                <span class="summary-score-of-100"> / 100</span>
+                            <div class="">
+                                <span class="text-buttonNSummaryh2 font-bold mr-1">72</span>
+                                <span class="text-textOf100Score font-medium mr-3"> / 100</span>
                             </div>
                         </div>
                     </li>
                 </ul>
     
                 <!-- Button -->
-                <div class="continue-btn">Continue</div>
+                <div class="flex justify-center mt-5 mb-6 bg-buttonNSummaryh2 h-11 rounded-configed items-center hover:bg-gradient-to-b hover:from-purpleBlue hover:to-royalBlue">
+                    <span class="text-lg text-white">Continue</span>
+                </div>
             </div>
         </section>
     </section>

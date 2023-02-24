@@ -106,7 +106,7 @@ body{
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgb(255, 229, 180);
+    /* background-color: rgb(255, 229, 180); */
     border-radius: 10px;
 }
 
