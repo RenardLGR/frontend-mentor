@@ -138,7 +138,7 @@ body{
 /* media queries */
 
 @media (max-width: 720px) {
-    /* Styles pour les écrans avec une largeur maximale de720px */
+    /* Styles pour les écrans avec une largeur maximale de 720px */
     .img-section{
         display: flex;
         align-items: center;
@@ -147,7 +147,44 @@ body{
 
 
 /* Mobile */
-@media (max-width: 620px) {
-    /* Styles pour les écrans avec une largeur maximale de 620px */
-    /* TODO */
+@media (max-width: 660px) {
+    /* Styles pour les écrans avec une largeur maximale de 660px */
+    .main-section{
+        margin: 10px 0 0 0;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+
+    .img-section{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        max-width: none;
+    }
+
+    .desktop-perfume-img{
+        display: none;
+    }
+
+    .mobile-perfume-img{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .wrapper-desc-section{
+        max-width: none;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .add-to-cart-content-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
