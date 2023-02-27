@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="output-tailwind.css">
+</head>
+
+<body class="bg-cream">
+    <section class="container flex mx-auto sm:max-w-4xl sm:mt-20">
+
+        <section class="container flex flex-col sm:flex-row mt-4 rounded-xl mx-3 bg-white">
+            <!-- Image -->
+            <section class="rounded-t-xl sm:w-1/2 sm:flex sm:items-center sm:rounded-l-xl">
+                <img src="../images/image-product-desktop.jpg" alt="perfume" class="hidden sm:block sm:rounded-l-xl">
+                <img src="../images/image-product-mobile.jpg" alt="perfume" class="rounded-t-xl sm:hidden">
+            </section>
+            <!-- Description -->
+            <section class="sm:w-1/2">
+                <section class="w-4/5 mx-auto">
+                    <h2 class="font-Montserrat text-lg uppercase tracking-wide text-darkGrayishBlue mt-4">P E R F U M E</h2>
+                    <h1 class="text-4xl font-semibold font-Fraunces mt-4 text-veryDarkBlue">Gabrielle Essence Eau De Parfum</h1>
+                    <p class="mt-6 font-Montserrat text-darkGrayishBlue text-xl leading-6">A floral, solar and voluptuous interpretation composed by
+                        Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                    <div class="flex flex-row items-center mt-6 md:mt-8 lg:mt-16">
+                        <span class="font-Fraunces text-5xl text-darkCyan">$149.99</span>
+                        <span class="font-Fraunces ml-6 line-through text-darkGrayishBlue">$169.99</span>
+                    </div>
+                    <section class="flex flex-row items-center mt-6 mb-8 bg-darkCyan rounded-md h-16 justify-center md:mt-10 lg:mt-40 cursor-pointer">
+                        <div class="flex flex-row items-center justify-center text-xl font-semibold">
+                            <img src="../images/icon-cart.svg" alt="cart" class="w-6 h-6">
+                            <span class="ml-5 font-Montserrat text-white">Add to Cart</span>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+    </section>
+</body>
+
+</html>
