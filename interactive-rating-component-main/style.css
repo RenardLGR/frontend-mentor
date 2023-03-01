@@ -182,3 +182,23 @@ body{
     line-height: 2rem;
     margin-top: 5%;
 }
+
+@media (max-width: 375px) {
+    /* Styles pour les écrans avec une largeur maximale de 375px */
+
+    .outer-wrapper{
+        max-width: 100%;
+        height: 550px;
+        margin: 10% auto;
+    }
+
+    .inner-wrapper{
+        max-width: 360px;
+        height: 550px;
+        margin: 0;
+    }
+
+    .content-section{
+        margin: 0 10%;
+    }
+}
