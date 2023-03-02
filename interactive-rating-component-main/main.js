@@ -13,7 +13,7 @@ function turnItOrange(e){
 
 
 
-//Show Thank You message after a Sumbit click
+// Show Thank You message after a Sumbit click
 const submitBtn = document.querySelector('.submit-button-div')
 submitBtn.addEventListener('click', submitClicked)
 

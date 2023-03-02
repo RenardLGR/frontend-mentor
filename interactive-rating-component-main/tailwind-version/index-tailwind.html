@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="output-tailwind.css">
+</head>
+
+<body class="bg-bgBody font-Overpass">
+
+    <section class="container max-w-[570px] h-[550px] flex justify-center mx-auto mt-20">
+        <section class="container max-w-[550px] h-[550px] mx-1 bg-[radial-gradient(at_top,_var(--tw-gradient-stops))] from-bgRadialTop to-bgRadialbottom rounded-3xl">
+
+            <!-- Rating state start -->
+            <section class="mx-4 from400:mx-8 from450:mx-10 from500:mx-16 main-rating-state-start-content-section">
+                <div class="mt-8 from500:mt-10 flex justify-center items-center h-[65px] w-[65px] rounded-full bg-bgBlueCircles">
+                    <img src="../images/icon-star.svg" alt="icon star" class="scale-140">
+                </div>
+                <h2 class="text-4xl text-textWhite mt-10 from500:mt-12 font-bold">How did we do?</h2>
+                <p class="text-xl text-textWhiteFaded mt-6 leading-8">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <!-- Scores div -->
+                <div class="mt-6">
+                    <ul class="flex flex-row justify-between">
+                        <li>
+                            <div class="flex justify-center items-center h-[60px] w-[60px] from400:h-[65px] from400:w-[65px] rounded-full bg-bgBlueCircles hover:bg-bgBlueCirclesHover hover:cursor-pointer individual-score-div text-textWhiteFaded hover:text-textWhite">
+                                <span class="text-xl font-bold pointer-events-none">1</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex justify-center items-center h-[60px] w-[60px] from400:h-[65px] from400:w-[65px] rounded-full bg-bgBlueCircles hover:bg-bgBlueCirclesHover hover:cursor-pointer individual-score-div text-textWhiteFaded hover:text-textWhite">
+                                <span class="text-xl font-bold pointer-events-none">2</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex justify-center items-center h-[60px] w-[60px] from400:h-[65px] from400:w-[65px] rounded-full bg-bgBlueCircles hover:bg-bgBlueCirclesHover hover:cursor-pointer individual-score-div text-textWhiteFaded hover:text-textWhite">
+                                <span class="text-xl font-bold pointer-events-none">3</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex justify-center items-center h-[60px] w-[60px] from400:h-[65px] from400:w-[65px] rounded-full bg-bgBlueCircles hover:bg-bgBlueCirclesHover hover:cursor-pointer individual-score-div text-textWhiteFaded hover:text-textWhite">
+                                <span class="text-xl font-bold pointer-events-none">4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex justify-center items-center h-[60px] w-[60px] from400:h-[65px] from400:w-[65px] rounded-full bg-bgBlueCircles hover:bg-bgBlueCirclesHover hover:cursor-pointer individual-score-div text-textWhiteFaded hover:text-textWhite">
+                                <span class="text-xl font-bold pointer-events-none">5</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Button -->
+                <div class="mt-10 h-14 flex justify-center items-center bg-bgOrange text-textWhite rounded-3xl hover:bg-textWhite hover:text-bgOrange hover:cursor-pointer submit-button-div">
+                    <span class="text-xl font-bold tracking-superwidest">SUBMIT</span>
+                </div>
+            </section>
+            <!-- Rating state end -->
+
+            <!-- Thank you state start -->
+            <section class="mx-4 from400:mx-8 from450:mx-10 from500:mx-12 flex flex-col justify-center items-center text-center hidden thank-you-content-section">
+                    <img src="../images/illustration-thank-you.svg" alt="thank you" class="mt-16 scale-110">
+                <div class="mt-16 px-4 pt-2 pb-1 text-textOrangeFaded text-lg bg-bgBlueCircles flex justify-center items-center rounded-3xl">
+                        <span>You selected <span class="note-selected-span">temp</span> out of 5</span>
+                </div>
+                <h1 class="text-3xl text-textWhite font-bold mt-12">Thank you!</h1>
+                <p class="text-xl text-textWhiteFaded leading-8 mt-8">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </section>
+            <!-- Thank you state end -->
+        </section>
+    </section>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>

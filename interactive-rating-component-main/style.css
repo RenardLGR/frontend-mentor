@@ -93,12 +93,14 @@ body{
     border-radius: 9999px;
     /* TAKE THIS COLOR FOR CIRCLES BG */
     background-color: rgb(38, 47, 56);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .individual-score-div:hover{
     cursor: pointer;
     /* TAKE THIS COLOR FOR CIRCLES BG ON HOVER*/
-    background-color: rgb(124, 136, 152)
+    background-color: rgb(124, 136, 152);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .individual-score-div.individual-score-div-selected{
@@ -107,8 +109,8 @@ body{
 
 .individual-score-div span{
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.5);
     font-weight: 700;
+    pointer-events: none;
 }
 
 /* Submit Button */
@@ -116,7 +118,8 @@ body{
 .submit-button-div{
     height: 60px;
     margin-top: 10%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: hsl(25, 97%, 53%);
+    color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -125,11 +128,12 @@ body{
 
 .submit-button-div:hover{
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: hsl(25, 97%, 53%);
 }
 
 .submit-button-div span{
     font-size: 1.3rem;
-    color: hsl(25, 97%, 53%);
     font-weight: 700;
     letter-spacing: 0.2rem;
 }
@@ -188,17 +192,22 @@ body{
 
     .outer-wrapper{
         max-width: 100%;
-        height: 550px;
+        /* height: 550px; */
         margin: 10% auto;
     }
 
     .inner-wrapper{
         max-width: 360px;
-        height: 550px;
+        /* height: 550px; */
         margin: 0;
     }
 
     .content-section{
         margin: 0 10%;
+    }
+
+    .individual-score-div{
+        height: 60px;
+        width: 60px;
     }
 }
