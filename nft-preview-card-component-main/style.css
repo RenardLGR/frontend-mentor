@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(13, 26, 45);
+    font-family: 'Outfit', sans-serif;
+    /* 300, 400, 600 */
+}
+
+.outer-wrapper{
+    max-width: 460px;
+    height: 760px;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 23, 41);
+    border-radius: 20px;
+}
+
+.inner-wrapper{
+    width: 400px;
+    height: 740px;
+    margin: 2% 3.5%;
+    margin-top: -10%;
+    padding: 2% 6%;
+    background-color: rgb(20, 39, 63);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Equilibrium & Eye section */
+.equilibrium-section{
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    width: 360px;
+    height: 360px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.equilibrium-eye-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: rgb(0, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.equilibrium-section:hover .equilibrium-eye-div{
+    visibility: visible;
+    cursor: pointer;
+}
+
+/* Description/Info */
+.description-info-section{
+    margin-top: 10%;
+}
+
+/* Item ID */
+.item-id-h1{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: max-content;
+}
+
+.item-id-h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    /* Cyan */
+}
+
+/* Item description */
+.item-description-div{
+    margin-top: 10%;
+    color: hsl(215, 51%, 70%);
+    /* Soft blue color */
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* Price & Due date */
+.price-due-date-div{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-span{
+    margin-left: 5px;
+    color: hsl(178, 100%, 50%);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.due-date-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.due-date-span{
+    margin-left: 5px;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Break div */
+.break-div{
+    margin-top: 10%;
+    width: 100%;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+/* Author */
+.author-section{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.author-avatar-div{
+    width: 45px;
+    height: 45px;
+    border-radius: 9999px;
+    border: 1px solid white;
+}
+
+.author-avatar-img{
+    width: 100%;
+    height: 100%;
+}
+
+.author-name-div{
+    margin-left: 5%;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.author-name-span{
+    color: white;
+}
+
+.author-name-span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
