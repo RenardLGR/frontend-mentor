@@ -162,3 +162,32 @@ body{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
+
+/* Mobile */
+@media (max-width: 440px) {
+    /* Styles pour les écrans avec une largeur maximale de 440px */
+
+    .outer-wrapper{
+        max-width: 460px;
+        height: auto;
+    }
+    
+    .inner-wrapper{
+        width: 93%;
+        height: auto;
+        padding: 2% 4%;
+    }
+
+    .equilibrium-section{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 0;
+        padding-bottom: 90%;
+        /* Allow us to set the height equa tot the width */
+    }
+
+    .equilibrium-eye-div{
+        display: none;
+    }
+}
