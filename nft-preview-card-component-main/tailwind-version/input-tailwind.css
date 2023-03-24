@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.custom-css-eye{
+    visibility: hidden;
+}
+
+.custom-css-equilibrium-section:hover .custom-css-eye{
+    visibility: visible;
+}

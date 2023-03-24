@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="output-tailwind.css">
+
+</head>
+
+<body class="bg-veryDarkBlueBodyBg font-Outfit">
+    <section class="container max-w-[380px] h-[700px] from420:max-w-[460px] from420:h-[750px]  flex justify-center mx-auto mt-24 bg-veryDarkBlueOuterBg rounded-configed">
+        <section class="container flex flex-col items-center bg-veryDarkBlueInnerBg max-w-[360px] h-[700px] from420:max-w-[400px] from420:h-[720px]  -mt-8 rounded-3xl">
+            <!-- Equilibrium & Eye section -->
+            <section class="flex justify-center mt-7 max-w-[360px] h-[360px]  rounded-xl custom-css-equilibrium-section hover:cursor-pointer">
+                <!-- MOBILE FIRST OMG -->
+                <div class="custom-css-equilibrium hover:cursor-pointer">
+                    <img src="../images/image-equilibrium.jpg" alt="equilibrium" class="rounded-xl
+                    max-w-[340px] h-[340px] from420:max-w-[360px] from420:h-[360px] ">
+                </div>
+                <div class="flex justify-center items-center absolute bg-cyanHalfedOpBg w-[340px]
+                from420:w-[360px] max-w-[340px] h-[340px] from420:max-w-[360px] from420:h-[360px] rounded-xl custom-css-eye">
+                    <img src="../images/icon-view.svg" alt="eye icon" class="">
+                </div>
+            </section>
+
+            <!-- Description/Info section -->
+            <section class="mt-5 from420:mt-8 mx-6 from420:mx-8">
+                <!-- Item ID div -->
+                <div class="item-id-div">
+                    <h1 class="text-white hover:text-cyanTxt text-3xl font-semibold hover:cursor-pointer max-w-max">Equilibrium #3429</h1>
+                </div>
+
+                <!-- Item description div -->
+                <div class="mt-6">
+                    <p class="text-softBlueTxt text-xl font-light">Our Equilibrium collection promotes balance and calm.</p>
+                </div>
+
+                <!-- Price/Due date div -->
+                <div class="mt-6 flex justify-between items-center">
+                    <!-- Price div -->
+                    <div class="flex flex-row">
+                        <img src="../images/icon-ethereum.svg" alt="ethereum icon" class="object-contain">
+                        <span class="ml-2 text-xl font-normal capitalize text-cyanTxt">0.041 ETH</span>
+                    </div>
+                    <!-- Due date div -->
+                    <div class="flex flex-row">
+                        <img src="../images/icon-clock.svg" alt="clock icon" class="object-contain">
+                        <span class="ml-2 text-lg font-normal text-softBlueTxt">3 days left</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Break div -->
+            <div class="mt-8 from420:mt-10 w-full max-w-[320px] from420:max-w-[360px] border-b border-solid border-veryDarkBlueLine"></div>
+
+            <!-- Author section -->
+            <section class="mt-6 w-full max-w-[320px] from420:max-w-[360px] flex flex-row items-center justify-start">
+                <!-- Profile picture/Avatar div -->
+                <div class="max-w-[40px] max-h-[40px] border-white border-2 border-solid rounded-full">
+                    <img src="../images/image-avatar.png" alt="Jules Wyvern" class="author-avatar-img">
+                </div>
+                <!-- Author name div -->
+                <div class="ml-3">
+                    <span class="text-lg font-normal text-softBlueTxt">Creation of </span>
+                    <span class="text-lg font-normal text-white hover:text-cyanTxt hover:cursor-pointer">Jules Wyvern</span>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
